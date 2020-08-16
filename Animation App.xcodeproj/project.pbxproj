@@ -13,6 +13,7 @@
 		55276ED724E960AD0010E264 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55276ED524E960AD0010E264 /* Main.storyboard */; };
 		55276ED924E960B30010E264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55276ED824E960B30010E264 /* Assets.xcassets */; };
 		55276EDC24E960B30010E264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55276EDA24E960B30010E264 /* LaunchScreen.storyboard */; };
+		55276EE424E969FE0010E264 /* Extension + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55276EE324E969FE0010E264 /* Extension + UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		55276ED824E960B30010E264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55276EDB24E960B30010E264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55276EDD24E960B30010E264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55276EE324E969FE0010E264 /* Extension + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIButton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				55276ED824E960B30010E264 /* Assets.xcassets */,
 				55276EDA24E960B30010E264 /* LaunchScreen.storyboard */,
 				55276EDD24E960B30010E264 /* Info.plist */,
+				55276EE324E969FE0010E264 /* Extension + UIButton.swift */,
 			);
 			path = "Animation App";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				55276ED424E960AD0010E264 /* ViewController.swift in Sources */,
 				55276ED024E960AD0010E264 /* AppDelegate.swift in Sources */,
 				55276ED224E960AD0010E264 /* SceneDelegate.swift in Sources */,
+				55276EE424E969FE0010E264 /* Extension + UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
