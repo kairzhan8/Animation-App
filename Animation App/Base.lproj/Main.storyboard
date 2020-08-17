@@ -52,13 +52,73 @@
                                     <action selector="runCoreAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q2i-uK-90U"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOn-YM-Pa5" customClass="SpringView" customModule="Spring">
+                                <rect key="frame" x="87" y="262" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pul-2t-0Pc">
+                                        <rect key="frame" x="54.5" y="53.5" width="131" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="V8z-XC-0Gv"/>
+                                    <constraint firstItem="pul-2t-0Pc" firstAttribute="centerY" secondItem="OOn-YM-Pa5" secondAttribute="centerY" id="jue-ez-hda"/>
+                                    <constraint firstItem="pul-2t-0Pc" firstAttribute="centerX" secondItem="OOn-YM-Pa5" secondAttribute="centerX" id="tJi-7D-0lc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="swing"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLc-a2-9xl" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="87" y="693" width="240" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Run Spring Animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="runSpringAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TT1-lO-x03"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nQj-Iz-7Qf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8gP-Up-LK2"/>
+                            <constraint firstItem="lLc-a2-9xl" firstAttribute="width" secondItem="nQj-Iz-7Qf" secondAttribute="width" id="LSc-to-2Jf"/>
                             <constraint firstItem="nQj-Iz-7Qf" firstAttribute="width" secondItem="xF4-XI-mON" secondAttribute="width" id="SXy-Xw-sFs"/>
+                            <constraint firstItem="OOn-YM-Pa5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="UyF-pN-Aa0"/>
+                            <constraint firstItem="OOn-YM-Pa5" firstAttribute="top" secondItem="xF4-XI-mON" secondAttribute="bottom" constant="30" id="ViQ-pq-N4T"/>
+                            <constraint firstItem="lLc-a2-9xl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W7S-MG-UAE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nQj-Iz-7Qf" secondAttribute="bottom" multiplier="1.3" id="nXt-Yi-YdA"/>
+                            <constraint firstItem="lLc-a2-9xl" firstAttribute="top" secondItem="nQj-Iz-7Qf" secondAttribute="bottom" constant="30" id="rE3-9M-1KK"/>
                             <constraint firstItem="xF4-XI-mON" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="sZ6-Pg-u38"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OOn-YM-Pa5" secondAttribute="trailing" constant="87" id="uA7-q5-EQ6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xF4-XI-mON" secondAttribute="trailing" constant="87" id="xnW-Dm-Pqm"/>
                             <constraint firstItem="xF4-XI-mON" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="zPZ-f7-qW3"/>
                         </constraints>
@@ -66,11 +126,12 @@
                     </view>
                     <connections>
                         <outlet property="coreAnimationView" destination="xF4-XI-mON" id="JhP-PS-Cwl"/>
+                        <outlet property="springAnimationView" destination="OOn-YM-Pa5" id="HfJ-Hw-9L8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="130"/>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
 </document>

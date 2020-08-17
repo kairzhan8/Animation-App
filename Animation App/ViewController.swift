@@ -6,11 +6,12 @@
 //  Copyright © 2020 Kairzhan Kural. All rights reserved.
 //
 
-import UIKit
+import Spring
 
 class ViewController: UIViewController {
 
     @IBOutlet var coreAnimationView: UIView!
+    @IBOutlet var springAnimationView: SpringView!
     
     private var originCoordinate: CGFloat?
     override func viewDidLoad() {
@@ -30,6 +31,17 @@ class ViewController: UIViewController {
             }
             
         })
+    }
+    @IBAction func runSpringAnimation(_ sender: SpringButton) {
+        
+        springAnimationView.animation = "flash"
+        springAnimationView.curve = "linear"
+        
+        springAnimationView.animate()
+        
+        sender.animation = "flash"
+        sender.curve = "linear"
+        sender.animate()
     }
     
 }
